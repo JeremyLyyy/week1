@@ -1,6 +1,82 @@
 #include <iostream>
+#include <cmath>
+using namespace std;
+
+int f(int x){
+   if (x <= 1)
+        return 1;
+   else 
+       return x*f(x-1);
+}
 
 int main() {
-	cout << "Hello World/n";
-	return 0;
+  float x,y,z,answer ;
+  {
+    cout << "Please enter your first number : ";
+    cin >> x;
+      cout << "Please type the number corresponding" << endl;
+      cout << "to the function that you want to use! :" << endl;
+      cout << "1. Addition" << endl;
+      cout << "2. Subtraction" << endl;
+      cout << "3. Multiplication" << endl;
+      cout << "4. Division" << endl;
+      cout << "5. Power" << endl;
+      cout << "6. Square Root" << endl;
+      cout << "7. Absolute Value" << endl;
+      cout << "8. Floor" << endl;
+      cout << "9. Ceiling" << endl;
+      cout << "10. Factorial" << endl;
+      cin >> z;
+
+      if (z == 1) {
+        cout << "Please enter your second number : ";
+        cin >> y;
+        x = x + y;
+        cout << "Your result is : " << answer;
+        }
+      else if (z == 2) {
+        cout << "Please enter your second number : ";
+        cin >> y;
+        x = x - y;
+        cout << "Your result is : " << answer;
+        }
+      else if (z == 3) {
+        cout << "Please enter your second number : ";
+        cin >> y;
+        x = x * y;
+        cout << "Your result is : " << answer;
+        }
+      else if (z == 4) {
+        cout << "Please enter your second number : ";
+        cin >> y;
+        x = x / y;
+        cout << "Your result is : " << x;
+        }
+      else if (z == 5) {
+        cout << "Please enter your power : ";
+        cin >> y;
+        x = pow(x,y);
+        cout << "Your result is : " << x;  
+        }
+      else if (z == 6) {
+        x = sqrt(x);
+        cout << "Your result is : " << x;
+        }
+      else if (z == 7) {
+        x = abs(x);
+        }
+      else if (z == 8) {
+        x = floor(x);
+        cout << "Your result is : " << x;
+        }
+      else if (z == 9) {
+        x = ceil(x);
+        cout << "Your result is : " << x;
+        }
+      else if (z == 10) {
+        x = f(x);
+        cout << "Your result is : " << x;
+        }
+    return 0; 
+    }
 }
