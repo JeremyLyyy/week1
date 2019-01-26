@@ -33,19 +33,19 @@ int main() {
         cout << "Please enter your second number : ";
         cin >> y;
         x = x + y;
-        cout << "Your result is : " << answer;
+        cout << "Your result is : " << x;
         }
       else if (z == 2) {
         cout << "Please enter your second number : ";
         cin >> y;
         x = x - y;
-        cout << "Your result is : " << answer;
+        cout << "Your result is : " << x;
         }
       else if (z == 3) {
         cout << "Please enter your second number : ";
         cin >> y;
         x = x * y;
-        cout << "Your result is : " << answer;
+        cout << "Your result is : " << x;
         }
       else if (z == 4) {
         cout << "Please enter your second number : ";
